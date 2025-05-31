@@ -4,7 +4,7 @@ class Money:
         self.__cents = cents
 
     def __str__(self):
-        return f"{self.__euros}.{self.__cents:02} eur"
+        return f"{self.__euros}.{self.__cents:02} eur"          # two floating digits after the decimal
     
     @property
     def euros (self) :
