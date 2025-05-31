@@ -13,7 +13,7 @@ class SuperGroup(SuperHero) :
         self._location  = location
         self._members   = []
 
-    @property
+    @property               # this is a getter decorator                   
     def name (self) :
         return self._name 
 

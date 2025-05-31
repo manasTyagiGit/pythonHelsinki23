@@ -14,7 +14,7 @@ class Money:
     def cents (self) :
         return self.__cents
     
-    def __eq__(self, another) :
+    def __eq__(self, another) :         # overloadinf the '=' operator
 
         # if self.euros != another.euros  :   return False
         # if self.cents != another.cents  :   return False

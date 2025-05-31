@@ -1,6 +1,6 @@
 class MagicPotion:
     def __init__(self, name: str):
-        self._name = name
+        self._name = name               # this attribute is 'protected' as it has a '_' in its identifier in the beginning
         self._ingredients = []
 
     def add_ingredient(self, ingredient: str, amount: float):
