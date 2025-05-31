@@ -1,0 +1,12 @@
+def longest (strings : list) -> str :
+    longest = strings[0]
+    for word in strings :
+        if len(word) > len(longest) :
+            longest = word
+
+    return longest
+
+
+if __name__ == "__main__":
+    strings = ["hi", "hiya", "hello", "howdydoody", "hi there"]
+    print(longest(strings))
