@@ -17,6 +17,6 @@ for product in search(products, price_under_4_euros):
     print(product)
 
 
-for product in search(products, lambda t: t[2]>10):                 # for quantity greater thean 10
+for product in search(products, lambda t: t[2]>10):                 # for quantity greater then 10
     print(product)
 
