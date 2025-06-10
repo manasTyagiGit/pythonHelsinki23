@@ -2,7 +2,7 @@ def price_under_4_euros(product):
     return product[1] < 4
 
 
-def search (products: list, criterion = callable) :
+def search (products: list, criterion = callable) :             # callable for criterion varibale function
     ret_list = []
     for p in products :
         if criterion(p) :
