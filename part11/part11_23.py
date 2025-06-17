@@ -9,13 +9,13 @@ class ShoppingList:
         self.products.append((product, number))
 
     def __iter__(self):
-        self.n = 0
+        self.i = 0
         return self
 
     def __next__(self):
-        if self.n < len(self.products):
-            product = self.products[self.n]
-            self.n += 1
+        if self.i < len(self.products):
+            product = self.products[self.i]
+            self.i += 1
             return product
         else:
             raise StopIteration
@@ -30,6 +30,6 @@ my_list.add("apples", 5)
 my_list.add("alcohol free beer", 24)
 my_list.add("pineapple", 1)
 
-print("the shopping list contains at least 8 of the following items:")
-for product in products_in_shopping_list(my_list, 8):
+print("the shopping list contains at least 5 of the following items:")
+for product in products_in_shopping_list(my_list, 5):
     print(product)

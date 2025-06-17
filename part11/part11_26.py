@@ -19,4 +19,4 @@ def most_common_words(filename: str, lower_limit: int) :
 if __name__ == "__main__" :
     filename = "/home/manas_tyagi/Data/Programming/Python/part11/comprehensions.txt"
     print ("Hello")
-    print (most_common_words (filename, 3))
+    print (most_common_words (filename, 2))
